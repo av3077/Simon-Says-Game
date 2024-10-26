@@ -8,15 +8,18 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress",function(){
-    if(started == false){
+document.addEventListener("keypress", function () {
+    if (started == false) {
         console.log("Game Started!");
         userSeq = [];
         gameSeq = [];
-        started=true;
+        level = 0;  // Reset level to 0 when starting a new game
+        h2.innerText = `Level ${level}`;  // Display level 0 initially
+        started = true;
         levelUp();
     }
 });
+
 
 function gameFlash(btn){
     btn.classList.add("flash");
