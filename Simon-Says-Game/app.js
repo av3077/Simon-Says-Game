@@ -12,6 +12,7 @@ document.addEventListener("keypress",function(){
     if(started == false){
         console.log("Game Started!");
         userSeq = [];
+        gameSeq = [];
         started=true;
         levelUp();
     }
